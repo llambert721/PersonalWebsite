@@ -76,6 +76,24 @@ body {
      width: 50%;
      height: 100%;
      word-wrap: break-word;
+     margin-top: 30px;
      margin-bottom: 0;
      color: black;
+}
+
+/* Skills styles*/
+
+.skills-wrapper {
+    width: max-content;
+}
+
+/* Project styles*/
+
+.project-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.project {
+    
 }
