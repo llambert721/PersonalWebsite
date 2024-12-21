@@ -18,16 +18,64 @@ html {
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
+    background-color: #025bc7;
 }
 
-/*Skills Section Style*/
-
-.skills-container {
+.content-wrapper {
     display: flex;
+    flex-direction: column;
+    row-gap: 20px;
 }
 
-.skills-section {
-    margin-left: auto;
-    width: 50%;
+.content-box {
+    background-color: #4798fc;
+    border: 2px solid white;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+/* Top content styles */
+
+.top-content-wrapper {
+    display: flex;
+    flex-direction: row;
+    column-gap: 4vw;
+}
+
+.top-content-wrapper img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Media query for smaller screens (like tablets or mobile) */
+@media (max-width: 1024px) {
+    .top-content-wrapper img {
+        width: 150px; /* Decrease the size for medium screens */
+        height: 150px;
+    }
+}
+
+@media (max-width: 768px) {
+    .top-content-wrapper img {
+        width: 120px; /* Further decrease for smaller screens */
+        height: 120px;
+    }
+}
+
+@media (max-width: 480px) {
+    .top-content-wrapper img {
+        width: 100px; /* Smaller size for mobile screens */
+        height: 100px;
+    }
+}
+
+.top-content-wrapper p {
+     width: 50%;
+     height: 100%;
+     word-wrap: break-word;
+     margin-bottom: 0;
+     color: black;
 }
