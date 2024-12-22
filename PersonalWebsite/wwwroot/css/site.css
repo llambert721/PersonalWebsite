@@ -19,7 +19,36 @@ html {
 
 body {
     margin-bottom: 60px;
-    background-color: #025bc7;
+    background-color: #106a73;
+    color: #f7fadc;
+}
+
+a {
+    text-decoration: underline;
+    color: #e3d346;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #6f6fde; 
+}
+
+.navbar {
+    background-color: #04565E; /* Set navbar background color */
+    color: #f7fadc; /* Default font color for navbar */
+    border-bottom: 2px solid #013F45;
+}
+
+.nav-link {
+    color: #f7fadc;
+}
+
+.navbar-brand {
+    color: #f7fadc;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='%23f7fadc' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
 .content-wrapper {
@@ -29,8 +58,8 @@ body {
 }
 
 .content-box {
-    background-color: #4798fc;
-    border: 2px solid white;
+    background-color: #04565E;
+    border: 2px solid #013F45;
     padding-left: 5px;
     padding-right: 5px;
 }
@@ -78,7 +107,6 @@ body {
      word-wrap: break-word;
      margin-top: 30px;
      margin-bottom: 0;
-     color: black;
 }
 
 /* Skills styles*/
