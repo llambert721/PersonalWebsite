@@ -94,6 +94,18 @@ body {
     flex-flow: row wrap;
 }
 
-.project {
-    
+.project.content-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 400px;
+    padding-bottom: 5px;
+    margin: 5px;
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    margin-top: auto;
 }
