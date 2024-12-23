@@ -23,6 +23,21 @@ namespace PersonalWebsite.Controllers
             return View();
         }
 
+        public IActionResult IsleOfNagol()
+        {
+            return View();
+        }
+
+        public IActionResult Avc()
+        {
+            return View();
+        }
+
+        public IActionResult Freepointer()
+        {
+            return View();
+        }
+
         public IActionResult Privacy()
         {
             return View();

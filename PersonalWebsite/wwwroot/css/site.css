@@ -37,6 +37,10 @@ a:hover {
     background-color: #04565E; /* Set navbar background color */
     color: #f7fadc; /* Default font color for navbar */
     border-bottom: 2px solid #013F45;
+    padding: 0; /* Remove unnecessary padding */
+    margin: 0; /* Remove unnecessary margin */
+    width: 100%; /* Ensure it doesn't exceed the screen width */
+    overflow-x: hidden; /* Prevent horizontal overflow */
 }
 
 .nav-link {
@@ -115,7 +119,7 @@ a:hover {
     width: max-content;
 }
 
-/* Project styles*/
+/* Index project styles*/
 
 .project-wrapper {
     display: flex;
@@ -126,9 +130,15 @@ a:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 400px;
+    width: 370px;
     padding-bottom: 5px;
     margin: 5px;
+}
+
+@media (max-width: 500px) {
+    .project.content-box {
+        width: 100vw;
+    }
 }
 
 .project img {
@@ -136,4 +146,38 @@ a:hover {
     height: auto;
     object-fit: contain;
     margin-top: auto;
+    margin-bottom: auto;
+}
+
+/* Project page styles*/
+
+.media-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    gap: 8px;
+    margin-top: 8px;
+}
+
+.media {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.media.content-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 370px;
+    padding: 5px;
+    margin: 5px;
+}
+
+@media (max-width: 500px) {
+    .media.content-box {
+        width: 100vw;
+    }
 }
