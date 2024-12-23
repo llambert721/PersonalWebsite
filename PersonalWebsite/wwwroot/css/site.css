@@ -68,6 +68,26 @@ a:hover {
     padding-right: 5px;
 }
 
+/* Bubble container to cover the full screen */
+#bubble-container {
+    position: fixed; /* This makes the bubbles stay in place relative to the viewport */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -1; /* Sends the bubble container behind everything else */
+}
+
+/* Bubble styles */
+.bubble {
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.4);
+    pointer-events: none; /* Ensure bubbles don't block interactions */
+}
+
+
 /* Top content styles */
 
 .top-content-wrapper {
