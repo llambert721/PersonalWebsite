@@ -149,7 +149,6 @@ a:hover {
 .project.content-box {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     width: 370px;
     padding-bottom: 5px;
     margin: 5px;
@@ -161,12 +160,13 @@ a:hover {
     }
 }
 
-.project img {
+.project.content-box img {
     width: 100%;
     height: auto;
     object-fit: contain;
     margin-top: auto;
     margin-bottom: auto;
+    align-self: center;
 }
 
 /* Project page styles*/
@@ -206,13 +206,34 @@ a:hover {
 
 .contact-wrapper {
     display: flex;
-    flex-flow: row wrap;
-    gap: 10%;
+    flex-flow: row nowrap;
+    gap: 7vw;
 }
 
 .contact-wrapper img {
     width: 200px;
     height: auto;
+}
+
+@media (max-width: 1024px) {
+    .contact-wrapper img {
+        width: 150px;
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-wrapper img {
+        width: 110px;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-wrapper img {
+        width: 90px;
+        height: auto;
+    }
 }
 
 .contact-info-wrapper {
@@ -235,4 +256,9 @@ a:hover {
 .contact-info img {
     width: 50px;
     height: auto;
+}
+
+.content-box img {
+    margin-top: 5px;
+    margin-bottom: 5px
 }
