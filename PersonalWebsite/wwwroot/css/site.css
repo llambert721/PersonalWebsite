@@ -66,6 +66,7 @@ a:hover {
     border: 2px solid #013F45;
     padding-left: 5px;
     padding-right: 5px;
+    width: fit-content;
 }
 
 /* Bubble container to cover the full screen */
@@ -251,6 +252,13 @@ a:hover {
     display: flex;
     flex-flow: row nowrap;
     gap: 3px;
+    align-items: center;
+}
+
+@media (max-width: 500px) {
+    .contact-wrapper {
+        flex-flow: column;
+    }
 }
 
 .contact-info img {
@@ -261,4 +269,8 @@ a:hover {
 .content-box img {
     margin-top: 5px;
     margin-bottom: 5px
+}
+
+.contact-info p {
+    margin-bottom: 0;
 }
